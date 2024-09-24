@@ -1,0 +1,5 @@
+IDI_ICON1   ICON   "icons/icon.ico"
+IDI_ICON2   ICON   DISCARDABLE   "icons/icon_empty.ico"
+IDI_ICON3   ICON   DISCARDABLE   "icons/icon_fastfood.ico"
+IDI_ICON4   ICON   DISCARDABLE   "icons/icon_settings.ico"
+

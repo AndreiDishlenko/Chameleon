@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiMainWindow_posadmin</class>
+ <widget class="QMainWindow" name="uiMainWindow_posadmin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/icons/icon.ico</normaloff>:/icons/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>50</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>50</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menuDicts">
+    <property name="title">
+     <string>Справочники</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Справочники</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Dictionaries</string>
+    </property>
+    <addaction name="openPluList"/>
+    <addaction name="separator"/>
+    <addaction name="openAgentsList"/>
+    <addaction name="actFirms"/>
+    <addaction name="action_60"/>
+    <addaction name="action_61"/>
+    <addaction name="action_40"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrice"/>
+    <addaction name="action_5"/>
+    <addaction name="separator"/>
+    <addaction name="action_9"/>
+    <addaction name="action_37"/>
+    <addaction name="action_35"/>
+    <addaction name="separator"/>
+    <addaction name="action_49"/>
+   </widget>
+   <widget class="QMenu" name="menuRegs">
+    <property name="title">
+     <string>Журналы</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Журналы</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Documents</string>
+    </property>
+    <addaction name="action_26"/>
+    <addaction name="action_27"/>
+    <addaction name="action_30"/>
+    <addaction name="separator"/>
+    <addaction name="action_33"/>
+    <addaction name="action_8"/>
+    <addaction name="separator"/>
+    <addaction name="actSaleDocs"/>
+    <addaction name="actInDocs"/>
+    <addaction name="separator"/>
+    <addaction name="action_12"/>
+    <addaction name="action_34"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Помощь</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Help</string>
+    </property>
+    <addaction name="action_11"/>
+    <addaction name="action_10"/>
+    <addaction name="separator"/>
+    <addaction name="action_Chameleon"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Файл</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>File</string>
+    </property>
+    <addaction name="action_exitUser"/>
+    <addaction name="separator"/>
+    <addaction name="action_exitApp"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Действия</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Действия</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionPrint"/>
+    <addaction name="actionPrintPreview"/>
+    <addaction name="actionExportExcel"/>
+    <addaction name="actionExportHTML"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Вид</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>View</string>
+    </property>
+    <addaction name="actCloseWindow"/>
+    <addaction name="actCloseAllWindows"/>
+    <addaction name="actOrderWindow"/>
+    <addaction name="separator"/>
+    <addaction name="actNextWindow"/>
+    <addaction name="actPrevWindow"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Отчеты</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Отчеты</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Reports</string>
+    </property>
+    <addaction name="repStore"/>
+    <addaction name="action_64"/>
+    <addaction name="action_65"/>
+    <addaction name="action_18"/>
+    <addaction name="action_67"/>
+    <addaction name="separator"/>
+    <addaction name="action_31"/>
+    <addaction name="action_42"/>
+    <addaction name="separator"/>
+    <addaction name="checkFlow"/>
+    <addaction name="action_73"/>
+    <addaction name="retailPluSales"/>
+    <addaction name="menuABC"/>
+    <addaction name="action_72"/>
+    <addaction name="action_52"/>
+    <addaction name="action_41"/>
+    <addaction name="action_62"/>
+    <addaction name="action_63"/>
+    <addaction name="action_55"/>
+    <addaction name="action_56"/>
+    <addaction name="action_58"/>
+    <addaction name="action_54"/>
+    <addaction name="separator"/>
+    <addaction name="action_50"/>
+    <addaction name="action_53"/>
+    <addaction name="action_57"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Администратор</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Администратор</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Administratior</string>
+    </property>
+    <addaction name="serviceActionFastfood"/>
+    <addaction name="serviceActionRestaurant"/>
+    <addaction name="action_51"/>
+    <addaction name="separator"/>
+    <addaction name="action_46"/>
+    <addaction name="action_43"/>
+    <addaction name="action_17"/>
+    <addaction name="separator"/>
+    <addaction name="action_44"/>
+    <addaction name="action_45"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
+    <addaction name="action_39"/>
+    <addaction name="separator"/>
+    <addaction name="action_70"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Сервис</string>
+    </property>
+    <property name="Ru" stdset="0">
+     <string>Сервис</string>
+    </property>
+    <property name="En" stdset="0">
+     <string>Service</string>
+    </property>
+    <addaction name="action_20"/>
+    <addaction name="action_22"/>
+    <addaction name="action_24"/>
+    <addaction name="separator"/>
+    <addaction name="actConfig"/>
+    <addaction name="action_36"/>
+    <addaction name="action_23"/>
+    <addaction name="separator"/>
+    <addaction name="actionTest"/>
+    <addaction name="actionLog"/>
+    <addaction name="action_66"/>
+    <addaction name="action_69"/>
+    <addaction name="action_68"/>
+    <addaction name="action_3"/>
+    <addaction name="action_71"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuDicts"/>
+   <addaction name="menuRegs"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menu_3"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="openPluList">
+   <property name="text">
+    <string>Товары</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+W</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::HighPriority</enum>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Товары</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Products</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictPlu_list.ui</string>
+   </property>
+  </action>
+  <action name="actSaleDocs">
+   <property name="text">
+    <string>Расходные накладные</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_unodoc.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>5</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="actInDocs">
+   <property name="text">
+    <string>Приходные накладные</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_unodoc.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>1</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="actCloseWindow">
+   <property name="text">
+    <string>Закрыть окно</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Закрыть окно1</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Close window</string>
+   </property>
+  </action>
+  <action name="actCloseAllWindows">
+   <property name="text">
+    <string>Закрыть все окна</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Закрыть все окна</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Close all windows</string>
+   </property>
+  </action>
+  <action name="actOrderWindow">
+   <property name="text">
+    <string>Упорядочить окна</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Упорядочить окна</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Arrange all windows</string>
+   </property>
+  </action>
+  <action name="actNextWindow">
+   <property name="text">
+    <string>Следующее</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Следующее окно</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Next window</string>
+   </property>
+  </action>
+  <action name="actPrevWindow">
+   <property name="text">
+    <string>Предыдущее</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Предыдущее окно</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Previous window</string>
+   </property>
+  </action>
+  <action name="openAgentsList">
+   <property name="text">
+    <string>Контрагенты</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Контрагенты</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Agents</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictAgents_list.ui</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Единицы измерения</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/units.ui</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Валюты</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Места хранения</string>
+   </property>
+  </action>
+  <action name="actionPrice">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Прайс-листы</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictPrice</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string>Прайс-листы</string>
+   </property>
+   <property name="filter" stdset="0">
+    <string>ifRetail=true</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Прайс-листы</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Prices</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictPrice.ui</string>
+   </property>
+   <property name="onClick" stdset="0">
+    <string>debug(&quot;aaa&quot;);</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Меню</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Chameleon">
+   <property name="text">
+    <string>О программе Chameleon</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/about.ui</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>Помощь бухгалтерия</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>Помощь фронт-офис</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>Перемещения</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>Банковская выписка</string>
+   </property>
+  </action>
+  <action name="serviceActionTest">
+   <property name="text">
+    <string>test</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/test.ui</string>
+   </property>
+  </action>
+  <action name="actConfig">
+   <property name="text">
+    <string>Конфигурация</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/config.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="serviceActionRestaurant">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Ресторан</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+R</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/restaurant/restaurant.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="actFirms">
+   <property name="text">
+    <string>Фирмы</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string/>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictFirms</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Фирмы</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Companies</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictFirms_list.ui</string>
+   </property>
+  </action>
+  <action name="repStore">
+   <property name="text">
+    <string>Остатки товаров на складе</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string/>
+   </property>
+   <property name="iconfile" stdset="0">
+    <string>/reports/rep_store.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Остаток товаров на складе</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Stock balance</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_store.ui</string>
+   </property>
+  </action>
+  <action name="action_exitApp">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Выход</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Exit</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>exit.ui</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="serviceActionFastfood">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Фастфуд</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/fastfood/fastfood.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Розничные продажи</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>Розничные продажи</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_retail.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>4</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Розничные продажи</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Retail sales</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/docs/doclist_agent.ui</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Платежные документы</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_pay.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>0</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>Группы товаров в продаже</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin_pos/plugroupsinsale.ui</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Причины отказа от заказа</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictSubkonto</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string/>
+   </property>
+   <property name="filter" stdset="0">
+    <string>iddoctype='10'</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictEdit.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Причины возврата заказа</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Purchase return reasons</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>Движение товара по складу</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_plumove.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>Движение товара</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>Подсчет остатков</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>Расчет итогов</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/calcresults.ui</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>Расшифровка движения товара</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_plumove_wide.ui</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>Закрыть период</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/closeperiod.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>Обслуживание Базы Данных</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/dbservice.ui</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>Открыть период</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/periods.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>Взаиморасчеты с клиентом</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_agentmove.ui</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>Счета-факутры</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_unodoc.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>15</string>
+   </property>
+  </action>
+  <action name="action_29">
+   <property name="text">
+    <string>Ввод остатков</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="text">
+    <string>Складские документы</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_store.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>3</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>Документы поставщиков</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>2</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/docs/doclist_agent.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Документы поставщиков</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Supplier documents</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>Документы покупателей</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_agent.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>1</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_31">
+   <property name="text">
+    <string>Дебиторская задолженность</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Баланс взаиморасчетов</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Settlements balance</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_deb.ui</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="text">
+    <string>Администрирование</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/admin.ui</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>Работа со складом</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_paydocs.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>5</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="text">
+    <string>Производственные документы</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>Конфигурация залов</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/restaurant/mapedit.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>Залы</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/restaurant/hallslist.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>Пользователи</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/dictEdit.ui</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictUsers</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string>Пользователи</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Розничная торговля</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Дисконтная система</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/discount.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Дисконтная система</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Discounts</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>Бонусная система</string>
+   </property>
+   <property name="Visible" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/bonus.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Бонусная система</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Bonuses</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="text">
+    <string>Возвраты товара</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/docs/doclist_unodoc.ui</string>
+   </property>
+   <property name="docType" stdset="0">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>Субконто документов</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Назначения документов</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Documents purposes</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictSubkonto.ui</string>
+   </property>
+   <property name="filter" stdset="0">
+    <string>ifDeleted=0 AND ifRetail=1</string>
+   </property>
+  </action>
+  <action name="actionExportExcel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Экспорт в Excel</string>
+   </property>
+   <property name="execFormScript" stdset="0">
+    <string>Export(&quot;xls&quot;);</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Печать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+   <property name="execFormScript" stdset="0">
+    <string>print();</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Печать</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Print</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPrintPreview">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Предпросмотр печати</string>
+   </property>
+   <property name="execFormScript" stdset="0">
+    <string>printpreview();</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Предпросмотр печати</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Print preview</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionExportHTML">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Экспорт в HTML</string>
+   </property>
+   <property name="execFormScript" stdset="0">
+    <string>Export(&quot;html&quot;);</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionTest">
+   <property name="text">
+    <string>test</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/test.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>Сводный по операциям</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_documents.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>Анализ задолженности</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Анализ задолженности</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Debt analysis</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_debdecode.ui</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="text">
+    <string>Модификаторы</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/modificators.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Модификаторы</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Modifiers</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>Примечания</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/descriptions.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Примечания</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Descriptions</string>
+   </property>
+  </action>
+  <action name="action_44">
+   <property name="text">
+    <string>Наборы ингридиентов</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/ingridients.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Наборы ингридиентов</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Ingridient kits</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>Бесплатные ингридиенты</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/free_ingridients.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Бесплатные ингридиенты</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Free ingridients</string>
+   </property>
+  </action>
+  <action name="action_47">
+   <property name="text">
+    <string>Визуализация ингридинетов</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin_pos/ingridients_groups.ui</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="text">
+    <string>Гарантиные листы</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/guarantee_search.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionLog">
+   <property name="text">
+    <string>LOG документов</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+L</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/changeslog.ui</string>
+   </property>
+  </action>
+  <action name="action_50">
+   <property name="text">
+    <string>Анализ себестоимостей</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_costanal.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="text">
+    <string>Меню - изменение цен</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin_pos/menusprices.ui</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>Редактор меню</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/menueditor.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Редактор меню</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Menu editor</string>
+   </property>
+  </action>
+  <action name="action_53">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Средняя цена закупки</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_54">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Торговый баланс</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_55">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Анализ прибыли</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_56">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Анализ расходов</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_57">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Списания продукции</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_58">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Финансовый отчет</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_finance.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_60">
+   <property name="text">
+    <string>Рассчетные счета</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string>Расчетные счета</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictAccounts</string>
+   </property>
+   <property name="filter" stdset="0">
+    <string>idFirm=%local_defFirm%</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Рассчетные счета</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Accounts</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictEdit.ui - не используется</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_61">
+   <property name="text">
+    <string>Места хранения</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string>Места хранения</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictStores</string>
+   </property>
+   <property name="filter" stdset="0">
+    <string>idFirm=%local_defFirm%</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Места хранения</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Storages</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictEdit.ui - не используется</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_52">
+   <property name="text">
+    <string>Отчет о продажах</string>
+   </property>
+   <property name="iconText">
+    <string>Отчет о ро продажах</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Отчет о продажах</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Sales report</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_sales.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_59">
+   <property name="text">
+    <string>Прайс-лист</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/dicts/dictPrice_edit.ui</string>
+   </property>
+  </action>
+  <action name="action_62">
+   <property name="text">
+    <string>Остатки денежных средств</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_accounts.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_63">
+   <property name="text">
+    <string>Движение денежных средств</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_payments.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_64">
+   <property name="text">
+    <string>Товарные документы</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_pludocs.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_65">
+   <property name="text">
+    <string>Товарная ведомость</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_plustatements.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_66">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/config.ui</string>
+   </property>
+  </action>
+  <action name="action_67">
+   <property name="text">
+    <string>Партии товаров</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/reports/rep_pluparties.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string/>
+   </property>
+   <property name="En" stdset="0">
+    <string/>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+  </action>
+  <action name="action_68">
+   <property name="text">
+    <string>Экспорт справочников</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/export.ui</string>
+   </property>
+  </action>
+  <action name="action_69">
+   <property name="text">
+    <string>Синхронизация справочников</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/sync.ui</string>
+   </property>
+  </action>
+  <action name="action_70">
+   <property name="text">
+    <string>Места приготовления</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/pos/kitchens.ui</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Места приготовления</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Cooking locations</string>
+   </property>
+  </action>
+  <action name="action_exitUser">
+   <property name="text">
+    <string>Сменить базу данных</string>
+   </property>
+   <property name="onClick" stdset="0">
+    <string>var mdiArea=AApp.findChild(&quot;mdiArea&quot;); 
+mdiArea.closeAllSubWindows();  
+
+AApp.setLocalSetting(&quot;activeLocation&quot;, &quot;&quot;);
+AApp.setLocalSetting(&quot;activeLocationName&quot;, &quot;&quot;);
+
+AApp.updateMainWindowTitle();
+
+AApp.mdiModeLogin();</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Сменить базу данных</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Logout</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string/>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Вывести отладочную инф.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+P</string>
+   </property>
+   <property name="onClick" stdset="0">
+    <string>ADatabase.DebugCurrentStateOfNetworkConnections();</string>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="checkFlow">
+   <property name="text">
+    <string>Поток чеков</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Поток чеков</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Check flow</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_checkflow.ui</string>
+   </property>
+  </action>
+  <action name="menuABC">
+   <property name="text">
+    <string>ABC анализ меню</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>ABC анализ меню</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>ABC menu analysis</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_sales_abc_analisys.ui</string>
+   </property>
+   <property name="iconFile" stdset="0">
+    <string/>
+   </property>
+   <property name="filter" stdset="0">
+    <string>9</string>
+   </property>
+  </action>
+  <action name="retailPluSales">
+   <property name="text">
+    <string>Розничные продажи</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Отчет о розничных продажах</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Retail sales report</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_sales.ui</string>
+   </property>
+   <property name="filter" stdset="0">
+    <string>9</string>
+   </property>
+  </action>
+  <action name="action_71">
+   <property name="text">
+    <string>Тестовое окно</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+O</string>
+   </property>
+   <property name="onClick" stdset="0">
+    <string/>
+   </property>
+   <property name="System" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>test_treeview.ui</string>
+   </property>
+  </action>
+  <action name="action_72">
+   <property name="text">
+    <string>Анализ Что-Если</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Анализ ЧТО ЕСЛИ?</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>What IF report</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_sales_WHATIF.ui</string>
+   </property>
+  </action>
+  <action name="action_73">
+   <property name="text">
+    <string>Сводный по дням</string>
+   </property>
+   <property name="Ru" stdset="0">
+    <string>Сводный по дням</string>
+   </property>
+   <property name="En" stdset="0">
+    <string>Days totals</string>
+   </property>
+   <property name="ui_file" stdset="0">
+    <string>/reports/rep_days.ui</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

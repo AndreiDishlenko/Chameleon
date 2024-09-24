@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/icon.ico</file>
+        <file>icons/icon_fastfood.ico</file>
+        <file>icons/icon_settings.ico</file>
+        <file>icons/icon_empty.ico</file>
+        <file>images/pos/background.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/logo_automation.png</file>
+        <file>images/logo_infobox.png</file>
+        <file>images/logo.png</file>
+        <file>images/logo_store.png</file>
+    </qresource>
+</RCC>

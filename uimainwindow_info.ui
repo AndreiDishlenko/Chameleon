@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>uiMainWindow_info</class>
+ <widget class="QMainWindow" name="uiMainWindow_info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/icons/icon.ico</normaloff>:/icons/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>50</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>50</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menuDicts">
+    <property name="title">
+     <string>Администрирование</string>
+    </property>
+    <addaction name="action_41"/>
+    <addaction name="action"/>
+    <addaction name="action_36"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_Chameleon"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Действия</string>
+    </property>
+    <addaction name="actionFront_screen"/>
+    <addaction name="actConfig"/>
+    <addaction name="action_23"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="actCloseWindow"/>
+    <addaction name="actCloseAllWindows"/>
+    <addaction name="actOrderWindow"/>
+    <addaction name="separator"/>
+    <addaction name="actNextWindow"/>
+    <addaction name="actPrevWindow"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu"/>
+   <addaction name="menuDicts"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actCloseWindow">
+   <property name="text">
+    <string>Закрыть окно</string>
+   </property>
+  </action>
+  <action name="actCloseAllWindows">
+   <property name="text">
+    <string>Закрыть все окна</string>
+   </property>
+  </action>
+  <action name="actOrderWindow">
+   <property name="text">
+    <string>Упорядочить окна</string>
+   </property>
+  </action>
+  <action name="actNextWindow">
+   <property name="text">
+    <string>Следующее</string>
+   </property>
+  </action>
+  <action name="actPrevWindow">
+   <property name="text">
+    <string>Предыдущее</string>
+   </property>
+  </action>
+  <action name="action_Chameleon">
+   <property name="text">
+    <string>О программе Chameleon</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/about.ui</string>
+   </property>
+  </action>
+  <action name="actConfig">
+   <property name="text">
+    <string>Конфигурация</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/config.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/exit.ui</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>Обслуживание Базы Данных</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/dbservice.ui</string>
+   </property>
+   <property name="Hidden" stdset="0">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>Пользователи</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/admin/dictEdit.ui</string>
+   </property>
+   <property name="dict" stdset="0">
+    <string>dictUsers</string>
+   </property>
+   <property name="dictName" stdset="0">
+    <string>Пользователи</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>Редактор тем</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/infoadmin/treelinks.ui</string>
+   </property>
+  </action>
+  <action name="actionFront_screen">
+   <property name="text">
+    <string>Front-screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/info/index.ui</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Помошник</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/infoadmin/assistant.ui</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Сетевая конфигурация</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Локальные настройки</string>
+   </property>
+   <property name="newMdi" stdset="0">
+    <string>/infoadmin/localsettings.ui</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
